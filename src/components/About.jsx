@@ -39,11 +39,9 @@ const About = () => {
     </motion.div>
     <motion.p  
     variants={fadeIn("", "", 0.2, 1)}
-    className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]' >
-    Collaboration and Teamwork: The developer values collaboration and would likely thrive in a team-oriented environment. They appreciate effective communication and collective efforts to achieve superior results. They would likely prefer working with cross-functional teams and fostering a sense of unity and cooperation.
-
-Professional Growth and Learning Opportunities: This developer is eager to continue expanding their skill set and learning from different teams. They would likely appreciate an organization that emphasizes continuous learning, provides access to training programs, workshops, conferences, and mentorship opportunities.
-    </motion.p>
+    className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify' >
+    proficiency: I have work and amass adept experience in building impactful project with teams and personal projects. Thus, i have vast experience as a frontend developer: React and Angular, backend developer: node and express and fullstack developer. <br />
+    Collaboration and Teamwork: As a diverse developer, i would prefer working with cross-functional teams and fostering a sense of unity of purpose and cooperation with the sense of setting and achieveing superior and impactful goals. This developer is eager to continue expanding their skill set and learning from different teams. </motion.p>
 
     <div className='mt-20 flex flex-wrap gap-10'>
       {services.map((service, index) => (

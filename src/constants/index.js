@@ -1,7 +1,7 @@
 import {
-  mobile,
+  react,
   backend,
-  creator,
+  angular,
   web,
   javascript,
   typescript,
@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  Igate,
 } from "../assets";
 
 export const navLinks = [
@@ -50,16 +51,16 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "React Developer",
+    icon: react,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Angular Developer",
+    icon: angular,
   },
 ];
 
@@ -119,19 +120,7 @@ const technologies = [
 ];
 
 const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+ 
   {
     title: "React Native Developer",
     company_name: "Tesla",
@@ -142,6 +131,20 @@ const experiences = [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "React.js Developer",
+    company_name: "I-gate",
+    icon: Igate,
+    iconBg: "#383E56",
+    date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Reviewing web layouts and design for front-end development",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
