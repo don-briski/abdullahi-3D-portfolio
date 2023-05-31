@@ -3,14 +3,27 @@ import { Tilt } from 'react-tilt'
 import {motion } from 'framer-motion'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
-import { github } from '../assets'
+import { github, live, liveDemo } from '../assets'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
+
+const StatusBar = ({progressvalue}) => {
+
+  return (
+    <div className="w-full h-7  font-semibold tracking-wider bg-gray-300 rounded-full">
+      <div
+        className="h-full flex  bg-blue-400 transition-all rounded-full text-center pt-1 "
+        style={{ width: `${progressvalue}` }}
+      ><p className='flex text-center justify-center'>{progressvalue}% completed</p></div>
+    </div>
+  );
+};
+
 
 
 
 const ProjectCard = ({ index, name, tags, description,
-   image, source_code_link, live_link }) => {
+   image, source_code_link, live_link, progressvalue }) => {
     return(
       <motion.div 
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -30,28 +43,41 @@ const ProjectCard = ({ index, name, tags, description,
           />
 
           <div className='absolute inset-0 flex 
-          justify-end m-3 card-img_hover'>
+          justify-between  m-3 card-img_hover '>
+            <div className='black-gradient w-10 h-10 rounded-full
+            flex justify-center items-center cursor-pointer' 
+            onClick={() => window.open(live_link, '_blank')}
+            >
+              <p>Live</p>
+              
+            </div>
             <div className='black-gradient w-10 h-10 rounded-full
             flex justify-center items-center cursor-pointer' 
             onClick={() => window.open(source_code_link, '_blank')}
             >
               <img 
               src={github} 
-              alt='github'
-              className='w-1/2 h-1/2 object-contain'
+              alt='live'
+              className='w-2/1 h-2/2 object-contain'
               />
+              
             </div>
           </div>
         </div>
 
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'> {name} </h3>
-          <p className='text-secondary m-2 text-[14px]'> {description}</p>
+        <div className='mt-5 '>
+        
+        <div className='flex  items-center justify-between'> 
+        <h3 className='w-1/2 text-white mr-7 font-bold text-[20px] flex'> {name} </h3>
+              <StatusBar progressvalue={progressvalue}  />
+        </div>
+         
+          <p className='text-secondary m-2 text-[15px]'> {description}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2 '>
           {tags.map((tag, index) => (
-            <p key={tag.name}  className={`text-[14px] ${tag.color} `} >
+            <p key={tag.name}  className={`text-[15px] ${tag.color} `} >
               #{tag.name}
             </p>
           ))}

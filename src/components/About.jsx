@@ -40,7 +40,7 @@ const About = () => {
     <motion.p  
     variants={fadeIn("", "", 0.2, 1)}
     className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify' >
-    proficiency: I have work and amass adept experience in building impactful project with teams and personal projects. Thus, i have vast experience as a frontend developer: React and Angular, backend developer: node and express and fullstack developer. <br />
+    proficiency: I have work and amass adept experience in building impactful project with teams and personal projects. Thus, i have vast experience as a frontend developer: React and Angular and backend developer: node and express. <br />
     Collaboration and Teamwork: As a diverse developer, i would prefer working with cross-functional teams and fostering a sense of unity of purpose and cooperation with the sense of setting and achieveing superior and impactful goals. This developer is eager to continue expanding their skill set and learning from different teams. </motion.p>
 
     <div className='mt-20 flex flex-wrap gap-10'>

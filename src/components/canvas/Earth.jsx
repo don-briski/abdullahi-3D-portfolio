@@ -21,12 +21,13 @@ const EarthCanvas = () => {
     <Canvas 
     shadows
     frameloop='demand'
+    dpr={[1, 2]}
     gl={{preserveDrawingBuffer: true}}
     camera={{
       fov: 65,
       near: 0.1,
       far: 200,
-      poasition: [-4, 3, 6 ]
+      position: [-4, 3, 6 ]
     }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -37,6 +38,8 @@ const EarthCanvas = () => {
         minPolarAngle={Math.PI / 2}
          />
          <Earth />
+
+         <Preload all />
       </Suspense>
     </Canvas>
   )

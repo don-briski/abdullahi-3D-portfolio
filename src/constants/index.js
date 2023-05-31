@@ -24,6 +24,18 @@ import {
   tripguide,
   threejs,
   Igate,
+  decagon,
+  firebase,
+  postgress,
+  jira,
+  swagger,
+  actions,
+  jest,
+  angularT,
+  sqlite3,
+  mysql,
+  ilearn,
+  foodapp,
 } from "../assets";
 
 export const navLinks = [
@@ -116,22 +128,57 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
+   },
+  // {
+  //   name: "firebase",
+  //   icon: firebase
+  // },
+  // {
+  //   name: "postgres",
+  //   icon: postgress
+  // },
+  // {
+  //   name: "jira",
+  //   icon: jira
+  // },
+  // {
+  //   name: "swagger",
+  //   icon: swagger
+  // },
+  //  {
+  //   name: "github-actions",
+  //   icon: actions
+  // },
+   {
+    name: "angular",
+    icon: angularT
   },
+  // {
+  //   name: "sq-lite3",
+  //   icon: sqlite3
+  // },
+  // {
+  //   name: "mySql",
+  //   icon: mysql
+  // }
 ];
 
 const experiences = [
  
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer",
+    company_name: "Decagon",
+    icon: decagon,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "June 2022 - current",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Adept in carrying-out Unit tests and integration test using jest",
+      "Engage in a team project that developed a shopper Ecommerce web Application and ilearn application using react, and node",
+      "Created and optimized front-end components using react",
+      "Adept use of Git and GitHub for version control in web Application Development",
+      "Create, integrate and manage both relational databases: Mysql, Postgres, sqlite3 and Nosql database: Mongo db.",
+      "Frequently used docker to containerized web Applications",
+      "familliarize with building simple frontend components with angular"
     ],
   },
   {
@@ -139,41 +186,19 @@ const experiences = [
     company_name: "I-gate",
     icon: Igate,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "December 2022 - February 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications interface using React.js and other related technologies.",
+      "Create manage and maintain front-end components and reusable components with angular 11+",
+      "Consumes Restful Api for front-end application development",
+      "Adept use of Git and GitHub for version control in web Application Development",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Reviewing web layouts and design for front-end development",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+ 
 ];
 
 const testimonials = [
@@ -205,28 +230,38 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ilearn",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users(students) to connect to professional tutors remotely with a paid token. student books sessions and get access to any professional of their area of interest.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "postgress",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "node/express",
         color: "pink-text-gradient",
       },
+      {
+        name: " css",
+        color: "white-text-gradient",
+      },
+      {
+        name: "cicd: github-actions",
+        color: "blue-text-gradient",
+      }
     ],
-    image: carrent,
+    image: ilearn,
     source_code_link: "https://github.com/",
+    live_link: "https://ilearn-sq012-node.netlify.app/",
+    progressvalue: 90
   },
   {
-    name: "Job IT",
+    name: "ajob",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -245,27 +280,35 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/",
+    live_link : '',
+    progressvalue: 10
   },
   {
-    name: "Trip Guide",
+    name: "Food App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This app houses several restaurant that allows customer to purchase food from their favourite restaurant within a local. this app was mainly built to test for functionality before it was optimized and remodified for production .",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "sqqlite-3",
         color: "green-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "node/express",
+        color: "white-text-gradient",
+      }
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: foodapp,
+    source_code_link: "https://github.com/don-briski/food-app-react-frontend",
+    live_link: "https://foodorderring.netlify.app/",
+    progressvalue: 93
   },
 ];
 

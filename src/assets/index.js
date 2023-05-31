@@ -7,6 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import profileImage from "./profileImage.jpg"
+import liveDemo from "./liveDemo.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -18,19 +19,35 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import firebase from './tech/firebase.png'
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import swagger from "./tech/swagger.png"
+import postgress from "./tech/postgress.png";
+import mysql from "./tech/mysql.png";
+import sqlite3 from "./tech/sqlite.png"
+import scrum from "./tech/scrum.png"
+import actions from "./tech/actions.png"
+import githubT from "./tech/github.png"
+import live from "./tech/live2.png"
+import angularT from "./tech/angular1.png"
+import dockerT from "./tech/docker1.png"
+import jest from "./tech/jest.png"
+import jira from "./tech/jira.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import Igate from './company/igateT.png'
+import Igate from './company/igateT.png';
+import decagon from "./company/decagon.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import ilearn from "./project/ilearn.png"
+import foodapp from "./project/foodapp.png"
 
 export {
   logo,
@@ -53,14 +70,31 @@ export {
   redux,
   tailwind,
   typescript,
+  mysql,
+  postgress,
+  swagger,
+  sqlite3,
+  jest,
+  jira,
+  scrum,
+  live,
+  githubT,
+  firebase,
+  actions,
+  angularT,
+  dockerT,
   threejs,
   meta,
   shopify,
   starbucks,
   Igate,
+  decagon,
   tesla,
   carrent,
   jobit,
   tripguide,
-  profileImage
+  profileImage,
+  liveDemo,
+  ilearn,
+  foodapp
 };
