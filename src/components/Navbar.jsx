@@ -9,7 +9,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState("false") 
   return (
     <nav className={`${styles.paddingX} fixed top-0 z-20 w-full flex items-center bg-primary 
-    py-5 `}>
+    py-5 border-b-[2px] `}>
     <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
     <Link to="/" className='flex items-center gap-2' 
     onClick={() => {setActive(""),
@@ -18,25 +18,25 @@ const Navbar = () => {
     <p className='text-white text-[18px] font-bold cursor-pointer flex'> Abdul &nbsp;   <span className='sm:block hidden'>| Portfolio</span> </p>
     </Link>
 
-    <ul className='list-none hidden sm:flex flex-row gap-10'>
+    <ul className='list-none hidden sm:flex flex-row gap-10 '>
         {
             navLinks.map((link) => (
                 <li key={link.id} className={`${ active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium, cursor-pointer`}
                 onClick={() => setActive(link.title  )}>
-                    <a href={`${link.id}`} >{link.title}</a>
+                    <a href={`#${link.id}`} >{link.title}</a>
                 </li>
             ))
         }
     </ul>
 
-    <div className='sm:hidden flex flex-1 justify-end items-center '>
-        <img  src={ toggle ? close : menu } 
+    <div className='sm:hidden flex flex-1 justify-end items-center  '>
+        <img  src={ toggle ? menu : close } 
             alt='menu'
             className='w-[28px] h-[28px] object-contain cursor-pointer'
             onClick={() => setToggle(!toggle)}
         />
 
-        <div className={`${!toggle ? "hidden": "flex"} p-6 black-gradient absolute top-20
+        <div className={`${!toggle ? "flex": "hidden"} p-6 black-gradient absolute top-20
         right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
         <ul className='list-none flex items-start justify-end flex-col gap-4'>
         {

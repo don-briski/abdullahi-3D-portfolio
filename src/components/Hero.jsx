@@ -4,6 +4,7 @@ import {styles} from '../styles'
 import { profileImage } from '../assets'
 import { fadeIn } from '../utils/motion'
 import { Tilt } from 'react-tilt'
+import { SectionWrapper } from '../hoc'
 
 
 const ProfileCard = () => {
@@ -32,15 +33,15 @@ const ProfileCard = () => {
 const Hero = () => {
   return (
     <section className='relative w-full mx-auto h-screen 
-    flex flex-col justify-evenly items-center '>
-      <div className={`${styles.paddingX} relative inset-0 top-[120px] max-w-7xl mx-auto
-      flex flex-row gap-5 items-start mb-10 `}>
-      <div className='flex flex-col justify-center items-center mt-5'>
+    flex flex-col justify-evenly items-center mb-[200px] '>
+      <div className={`${styles.paddingX}  inset-0  top-[200px] md:top-[250px] relative max-w-7xl mx-auto
+      flex flex-row  gap-5 items-start mb-10 md:mb-20 `}>
+      <div className='flex flex-col justify-center items-center my-5 md:my-8'>
       <div className='w-5 h-5 rounded-full bg-[#915eff] ' />
       <div className='w-1 sm:h-80 h-40  violet-gradient ' />
       </div>
 
-      <div>
+      <div className='md:mt-[40px]'>
       <h1 className={`${styles.heroHeadText} `}>
         Hi, I am <span className='text-[#915eff]'>Abdullahi,</span>
       </h1>
@@ -49,7 +50,7 @@ const Hero = () => {
       
       </div>
 
-      <div className='relative mt-10 sm:mt-[30px] '>
+      <div className=' mt-[120px] sm:mt-[30px] '>
       <ProfileCard />
       </div>
       
@@ -69,4 +70,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default SectionWrapper(Hero, '');
