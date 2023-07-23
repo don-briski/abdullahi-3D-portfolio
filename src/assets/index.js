@@ -43,9 +43,8 @@ import tesla from "./company/tesla.png";
 import Igate from './company/igateT.png';
 import decagon from "./company/decagon.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import restaurant from "./company/restaurant.jpg";
+import gpt from "./company/gpt-3.jpg";
 import ilearn from "./project/ilearn.png"
 import foodapp from "./project/foodapp.png"
 
@@ -96,5 +95,7 @@ export {
   profileImage,
   liveDemo,
   ilearn,
-  foodapp
+  foodapp,
+  gpt,
+  restaurant
 };

@@ -36,6 +36,7 @@ import {
   mysql,
   ilearn,
   foodapp,
+  gpt,
 } from "../assets";
 
 export const navLinks = [
@@ -265,26 +266,23 @@ const projects = [
     progressvalue: 90
   },
   {
-    name: "ajob",
+    name: "gpt-3-app",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A react rendering app from a figma design of a gpt-3. it demonstrate the skills of a buiding and rendeing figma designs with capturing the smallest details",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
+      ,
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    live_link : '',
+    image: gpt,
+    source_code_link: "https://github.com/don-briski/react-project/tree/master/gpt-3-app",
+    live_link : 'https://charming-meringue-75f127.netlify.app/',
     progressvalue: 10
   },
   {
@@ -301,7 +299,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "rest-api",
         color: "pink-text-gradient",
       },
       {
@@ -313,6 +311,25 @@ const projects = [
     source_code_link: "https://github.com/don-briski/food-app-react-frontend",
     live_link: "https://foodorderring.netlify.app/",
     progressvalue: 93
+  },  {
+    name: "restaurant-app",
+    description:
+      "A react rendering app from a figma design of a restuarant homepage. it demonstrate the skills of a buiding and rendeing figma designs with capturing the smallest details",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      ,
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: gpt,
+    source_code_link: "https://github.com/don-briski/react-project/tree/master/restaurant-app",
+    live_link : 'https://melodious-moxie-1bc5f6.netlify.app/#home',
+    progressvalue: 10
   },
 ];
 

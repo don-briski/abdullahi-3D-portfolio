@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@tailwind darkMode;
+@tailwind lightMode;
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +15,16 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+
+/* .dark-mode {
+  background-color: #333;
+  color: #f5f5f5;
+} */
+
+/* .light-mode{
+  background-color: #f5f5f5;
+  color: #333;
+} */
 
 .hash-span {
   margin-top: -100px;
